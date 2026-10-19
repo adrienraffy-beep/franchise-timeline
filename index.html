@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronologie de Séries de Jeux Vidéo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Franchise Finder</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Entrez le nom d'un jeu (ex: Grand Theft Auto, Zelda...)">
+            <button id="search-btn">Rechercher</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="loading" class="hidden">Recherche en cours...</div>
+        <div id="error-message" class="hidden"></div>
+        <!-- La timeline sera générée ici -->
+        <section id="timeline" class="timeline"></section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
